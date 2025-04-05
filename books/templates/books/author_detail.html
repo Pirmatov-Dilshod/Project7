@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ author.name }}{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-4 text-center">
+        <div class="card mb-3">
+            <div class="card-body">
+                <h1>{{ author.name }}</h1>
+                {% if author.birth_date %}
+                    <p class="text-muted">Дата рождения: {{ author.birth_date }}</p>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+    <div class="col-md-8">
+        <div class="card">
+            <div class="card-header">
+                <h3>Биография</h3>
+            </div>
+            <div class="card-body">
+                {% if author.bio %}
+                    <p>{{ author.bio }}</p>
+                {% else %}
+                    <p class="text-muted">Биография не указана</p>
+                {% endif %}
+            </div>
+        </div>
+        
+        <h3 class="mt-4">Книги автора</h3>
+        {% if books %}
+            <div class="list-group">
+                {% for book in books %}
+                    <a href="{% url 'book-detail' book.id %}" class="list-group-item list-group-item-action">
+                        {{ book.title }} ({{ book.published_date.year }})
+                    </a>
+                {% endfor %}
+            </div>
+        {% else %}
+            <div class="alert alert-info">Нет книг этого автора.</div>
+        {% endif %}
+    </div>
+</div>
+{% endblock %}

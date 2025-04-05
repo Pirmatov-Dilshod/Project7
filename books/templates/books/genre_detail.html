@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ genre.name }}{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-12">
+        <h1>{{ genre.name }}</h1>
+        {% if genre.description %}
+            <p>{{ genre.description }}</p>
+        {% endif %}
+        
+        <h3 class="mt-4">Книги этого жанра</h3>
+        {% if books %}
+            <div class="row">
+                {% for book in books %}
+                <div class="col-md-3 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">{{ book.title }}</h5>
+                            <p class="card-text">
+                                <small class="text-muted">{{ book.author.name }}</small>
+                            </p>
+                            <a href="{% url 'book-detail' book.id %}" class="btn btn-outline-primary btn-sm">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        {% else %}
+            <div class="alert alert-info">Нет книг этого жанра.</div>
+        {% endif %}
+    </div>
+</div>
+{% endblock %}

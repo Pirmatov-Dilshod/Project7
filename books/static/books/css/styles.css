@@ -1,0 +1,51 @@
+/* Основные стили */
+body {
+    background-color: #f8f9fa;
+}
+
+/* Навигационная панель */
+.navbar {
+    box-shadow: 0 2px 4px rgba(0,0,0,.1);
+}
+
+/* Карточки книг */
+.card {
+    transition: transform 0.2s;
+    box-shadow: 0 1px 3px rgba(0,0,0,.1);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 6px rgba(0,0,0,.1);
+}
+
+/* Обложки книг */
+.book-cover {
+    height: 300px;
+    object-fit: cover;
+}
+
+/* Авторы */
+.author-img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+/* Жанры */
+.genre-badge {
+    font-size: 0.9rem;
+    margin-right: 5px;
+}
+
+/* Формы */
+.form-group {
+    margin-bottom: 1rem;
+}
+
+/* Адаптивные стили */
+@media (max-width: 768px) {
+    .book-cover {
+        height: 200px;
+    }
+}

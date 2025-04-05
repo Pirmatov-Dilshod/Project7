@@ -1,0 +1,36 @@
+[
+    {
+        "model": "books.genre",
+        "fields": {
+            "name": "Fiction",
+            "description": "Imaginary stories and characters"
+        }
+    },
+    {
+        "model": "books.genre",
+        "fields": {
+            "name": "Science Fiction",
+            "description": "Futuristic, scientific, and technological themes"
+        }
+    },
+    {
+        "model": "books.author",
+        "fields": {
+            "name": "George Orwell",
+            "bio": "English novelist, essayist, journalist and critic",
+            "birth_date": "1903-06-25"
+        }
+    },
+    {
+        "model": "books.book",
+        "fields": {
+            "title": "1984",
+            "author": 1,
+            "published_date": "1949-06-08",
+            "isbn": "9780451524935",
+            "description": "A dystopian novel about totalitarianism",
+            "available_copies": 3,
+            "genres": [1, 2]
+        }
+    }
+]

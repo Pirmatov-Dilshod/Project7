@@ -1,0 +1,21 @@
+2025-04-27 13:56:54,705 - [INFO] - root - Бот успешно запущен. Ожидание обновлений...
+2025-04-27 13:56:54,706 - [INFO] - aiogram.dispatcher - Start polling
+2025-04-27 13:56:54,846 - [INFO] - aiogram.dispatcher - Run polling for bot @businessellbuybot id=7858591852 - 'businessbot'
+2025-04-27 13:57:06,777 - [INFO] - aiogram.event - Update id=512816474 is not handled. Duration 0 ms by bot id=7858591852
+2025-04-27 13:57:39,120 - [INFO] - aiogram.dispatcher - Polling stopped
+2025-04-27 13:57:39,383 - [INFO] - aiogram.dispatcher - Polling stopped for bot @businessellbuybot id=7858591852 - 'businessbot'
+2025-04-27 13:57:39,385 - [INFO] - root - Бот остановлен вручную.
+2025-04-27 13:57:49,453 - [INFO] - root - Бот успешно запущен. Ожидание обновлений...
+2025-04-27 13:57:49,461 - [INFO] - aiogram.dispatcher - Start polling
+2025-04-27 13:57:49,575 - [INFO] - aiogram.dispatcher - Run polling for bot @businessellbuybot id=7858591852 - 'businessbot'
+2025-04-27 13:58:20,740 - [INFO] - aiogram.event - Update id=512816475 is not handled. Duration 0 ms by bot id=7858591852
+2025-04-27 13:58:31,135 - [INFO] - aiogram.event - Update id=512816476 is handled. Duration 360 ms by bot id=7858591852
+2025-04-27 13:58:33,442 - [INFO] - aiogram.event - Update id=512816477 is handled. Duration 531 ms by bot id=7858591852
+2025-04-27 13:58:35,429 - [INFO] - aiogram.event - Update id=512816478 is not handled. Duration 0 ms by bot id=7858591852
+2025-04-27 13:58:49,273 - [INFO] - aiogram.event - Update id=512816479 is handled. Duration 733 ms by bot id=7858591852
+2025-04-27 13:59:02,353 - [INFO] - aiogram.event - Update id=512816480 is handled. Duration 296 ms by bot id=7858591852
+2025-04-27 13:59:10,531 - [INFO] - aiogram.event - Update id=512816481 is handled. Duration 266 ms by bot id=7858591852
+2025-04-27 13:59:16,543 - [INFO] - aiogram.event - Update id=512816482 is handled. Duration 203 ms by bot id=7858591852
+2025-04-27 13:59:20,436 - [INFO] - aiogram.event - Update id=512816483 is handled. Duration 453 ms by bot id=7858591852
+2025-04-27 13:59:23,200 - [INFO] - aiogram.event - Update id=512816484 is not handled. Duration 15 ms by bot id=7858591852
+2025-04-27 14:03:06,074 - [INFO] - aiogram.event - Update id=512816485 is not handled. Duration 0 ms by bot id=7858591852

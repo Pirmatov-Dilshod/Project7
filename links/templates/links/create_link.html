@@ -1,6 +1,17 @@
-<h2>Создать короткую ссылку</h2>
-<form method="post">
+{% extends 'base.html' %}
+{% block content %}
+<form method="post" class="row g-3 justify-content-center">
   {% csrf_token %}
-  {{ form.as_p }}
-  <button type="submit">Сократить</button>
+  <div class="col-md-5">
+    {{ form.original_url.label_tag }}
+    {{ form.original_url }}
+  </div>
+  <div class="col-md-3">
+    {{ form.short_code.label_tag }}
+    {{ form.short_code }}
+  </div>
+  <div class="col-md-2">
+    <button type="submit" class="btn btn-primary w-100">Shorten</button>
+  </div>
 </form>
+{% endblock %}

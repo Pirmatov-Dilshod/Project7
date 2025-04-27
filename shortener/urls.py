@@ -22,5 +22,7 @@ from links import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.create_link, name='create_link'),
+    path('links/', views.link_list, name='link_list'),
+    path('delete-selected-links/', views.delete_selected_links, name='delete_selected_links'),  # должно стоять выше!
     path('<str:code>/', views.redirect_link, name='redirect_link'),
 ]
